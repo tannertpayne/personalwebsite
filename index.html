@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Tanner T. Payne</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">TANNER T. PAYNE</div>
+        <nav>
+            <div class="menu-icon">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <!--<li><a href="ideas.html">Ideas</a></li>
+                <li><a href="gallery.html">Projects</a></li>
+                <li><a href="about.html">About Me</a></li>-->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Tell us your app idea and we'll bring it to life!</h1>
+        <div class="container">
+        <form method="post" action="" name="contact-form" id="idea-form">
+            <textarea type="text" name="your-idea" rows="4" placeholder="What's your app idea?" required></textarea>
+            <input type="text" name="your-name" placeholder="First Name" required>
+            <input type="email" name="your-email" placeholder="Email" required>
+            <button type="submit" value="Submit" id="submit" class="btn" onclick="openPopup()">Send us your idea!</button>
+        </form>
+    </div>
+    </section>
+    <div id="customModal">
+        <div class="modal" id="popup">
+          <span class="close">&times;</span>
+          <h3>That's a sweet idea! Keep them coming!</h3>
+          <h4>Stay tuned to see if we build and launch it for you!</p>
+        </div>
+      </div>      
+    <script src="script.js"></script>
+    <script src="google.js"></script>
+    <script>
+        let popup = document.getElementById("popup");
+let closeButton = document.querySelector(".close");
+
+function openPopup() {
+    popup.classList.add("open-popup");
+}
+
+function closePopup() {
+    popup.classList.remove("open-popup");
+    // Reload the page after closing the popup
+    location.reload();
+}
+
+// Event listener for the close button
+closeButton.addEventListener("click", function() {
+    closePopup();
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+/* Base styles */
+@font-face {
+    font-family: chalk;
+    src: url(assets/chalk.otf);
+}
+@font-face {
+    font-family: montlight;
+    src: url(assets/montlight.otf);
+}
+@font-face {
+font-family: montheavy;
+    src: url(assets/montheavy.otf);
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montheavy;
+    background-color: #002400; /* Primary dark green */
+    color: #F7F3E3; /* Accent color */
+    line-height: 1.6;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002400; /* Primary dark green */
+    padding: 20px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+    background-color: rgba(0, 36, 0, 0.8); /* Dark green with transparency */
+}
+
+.logo {
+    font-family: chalk;
+    color: white; /* Secondary color */
+    font-size: 28px;
+}
+
+nav .menu-icon {
+    font-size: 28px;
+    color: #F7F3E3; /* Accent color */
+    cursor: pointer;
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    color: #F7F3E3; /* Accent color */
+    text-decoration: none;
+    font-family: montlight;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #AF9164; /* Secondary color */
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        background-color: #002400; /* Primary dark green */
+        padding: 20px 0;
+    }
+
+    nav .menu-icon {
+        display: block;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
+
+/* Sections */
+section {
+    padding: 100px 20px 60px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    color: #F7F3E3; /* Accent color */
+}
+
+section#home {
+    background-color: #002400; /* Primary dark green */
+    color: #F7F3E3; /* Accent color */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+}
+h1 {
+    max-width: auto;
+    font-family: montheavy;
+    font-size: 32px;
+    margin-bottom: 10px;
+    margin-top: 130px;
+    position: relative;
+    z-index: 10;
+    text-align: left;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin: 30px auto;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea, button {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    font-family: montlight;
+    font-weight: 500;
+}
+
+input, textarea {
+    background-color: #F7F3E3; /* Light accent color */
+    border: 1px solid #B3B6B7; /* Accent color */
+}
+
+::placeholder {
+    color: black;
+}
+
+button {
+    background-color: #AF9164; /* Secondary color */
+    color: white; /* Light accent color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: montheavy;
+}
+
+button:hover {
+    background-color: #7b6037; /* Accent color */
+    color: white;
+}
+
+/* Ideas Page */
+#ideas {
+    background-color: #002400; /* Primary dark green */
+}
+
+.ideas-display {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.idea {
+    background-color: #B3B6B7; /* Accent color */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.thumbs {
+    display: flex;
+    gap: 20px;
+}
+
+.thumbs span {
+    cursor: pointer;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.thumbs span:hover {
+    transform: scale(1.2);
+}
+
+/* Projects Page */
+#projects {
+    background-color: #002400; /* Primary dark green */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    filter: brightness(70%);
+}
+
+/* About Me Page */
+#about {
+    background-color: #002400; /* Primary dark green */
+    padding: 100px 20px 60px;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+p {
+    max-width: 50%;
+    font-family: montlight;
+    margin-bottom: 20px;
+    margin-left: -50%;
+    line-height: 1.8;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+    width: 400px;
+    background: #f7f3e3;
+    position:absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align:center;
+    padding: 30px 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+  }
+
+  .open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+  }
+  
+  /* Modal Content */
+  .modal {
+    background-color: #f7f3e3; /* Accent color */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #af9164; /* Secondary color */
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    color: #002400; /* Primary dark green color */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+  }
+
+  h3 {
+    margin-top: 10px;
+    font-family: montheavy;
+    font-size: 20px;
+  }
+
+  h4 {
+    margin-top: 10px;
+    font-family: montlight;
+    font-size: 12px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #af9164; /* Secondary color */
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: -10px;
+    margin-top: -18px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #002400; /* Primary dark green color */
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
