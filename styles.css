@@ -22,7 +22,7 @@ font-family: montheavy;
 body {
     font-family: montheavy;
     background-color: #6C757D; /* Primary dark green */
-    color: #ffffff; /* Accent color */
+    color: #6C757D; /* Accent color */
     line-height: 1.6;
     padding: 20px;
     transition: all 0.3s ease;
@@ -75,7 +75,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #700000; /* Secondary color */
+    color: #AF9164; /* Secondary color */
 }
 
 /* Mobile Navigation */
@@ -108,12 +108,12 @@ section {
     margin: auto;
     text-align: center;
     transition: opacity 0.3s ease;
-    color: #700000; /* Accent color */
+    color: white; /* Accent color */
 }
 
 section#home {
     background-color: #6C757D; /* Primary dark green */
-    color: #F7F3E3; /* Accent color */
+    color: white; /* Accent color */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -153,7 +153,7 @@ input, textarea, button {
 
 input, textarea {
     background-color: white; /* Light accent color */
-    border: 1px solid black; /* Accent color */
+    border: 2px solid black; /* Accent color */
 }
 
 ::placeholder {
@@ -161,7 +161,7 @@ input, textarea {
 }
 
 button {
-    background-color: #AF9164; /* Secondary color */
+    background-color: #F57C00; /* Secondary color */
     color: white; /* Light accent color */
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -237,7 +237,7 @@ button:hover {
 
 /* About Me Page */
 #about {
-    background-color: #6C757D; /* Primary dark green */
+    background-color: #002400; /* Primary dark green */
     padding: 100px 20px 60px;
     max-width: 800px;
     margin: auto;
@@ -279,11 +279,11 @@ p {
     background-color: white; /* Accent color */
     margin: auto;
     padding: 20px;
-    border: 1px solid #700000; /* Secondary color */
+    border: 2px solid black; /* Secondary color */
     width: 80%;
     max-width: 400px;
     text-align: center;
-    color: #6C757D; /* Primary dark green color */
+    color: black; /* Primary dark green color */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 9999;
   }
@@ -292,6 +292,7 @@ p {
     margin-top: 10px;
     font-family: montheavy;
     font-size: 20px;
+    color: #F57C00;
   }
 
   h4 {
@@ -312,7 +313,7 @@ p {
   
   .close:hover,
   .close:focus {
-    color: #6C757D; /* Primary dark green color */
+    color: black; /* Primary dark green color */
     text-decoration: none;
     cursor: pointer;
   }
