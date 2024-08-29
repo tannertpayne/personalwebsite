@@ -21,8 +21,8 @@ font-family: montheavy;
 
 body {
     font-family: montheavy;
-    background-color: #002400; /* Primary dark green */
-    color: #F7F3E3; /* Accent color */
+    background-color: #6C757D; /* Primary dark green */
+    color: #ffffff; /* Accent color */
     line-height: 1.6;
     padding: 20px;
     transition: all 0.3s ease;
@@ -33,7 +33,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #002400; /* Primary dark green */
+    background-color: #6C757D; /* Primary dark green */
     padding: 20px 30px;
     position: fixed;
     width: 100%;
@@ -55,7 +55,7 @@ header.scrolled {
 
 nav .menu-icon {
     font-size: 28px;
-    color: #F7F3E3; /* Accent color */
+    color: white; /* Accent color */
     cursor: pointer;
     display: none;
 }
@@ -67,7 +67,7 @@ nav ul {
 }
 
 nav a {
-    color: #F7F3E3; /* Accent color */
+    color: white; /* Accent color */
     text-decoration: none;
     font-family: montlight;
     font-size: 18px;
@@ -75,7 +75,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #AF9164; /* Secondary color */
+    color: #700000; /* Secondary color */
 }
 
 /* Mobile Navigation */
@@ -88,7 +88,7 @@ nav a:hover {
         position: fixed;
         top: 60px;
         left: 0;
-        background-color: #002400; /* Primary dark green */
+        background-color: #6C757D; /* Primary dark green */
         padding: 20px 0;
     }
 
@@ -108,11 +108,11 @@ section {
     margin: auto;
     text-align: center;
     transition: opacity 0.3s ease;
-    color: #F7F3E3; /* Accent color */
+    color: #700000; /* Accent color */
 }
 
 section#home {
-    background-color: #002400; /* Primary dark green */
+    background-color: #6C757D; /* Primary dark green */
     color: #F7F3E3; /* Accent color */
     height: 100vh;
     display: flex;
@@ -152,8 +152,8 @@ input, textarea, button {
 }
 
 input, textarea {
-    background-color: #F7F3E3; /* Light accent color */
-    border: 1px solid #B3B6B7; /* Accent color */
+    background-color: white; /* Light accent color */
+    border: 1px solid black; /* Accent color */
 }
 
 ::placeholder {
@@ -169,13 +169,13 @@ button {
 }
 
 button:hover {
-    background-color: #7b6037; /* Accent color */
+    background-color: #700000; /* Accent color */
     color: white;
 }
 
 /* Ideas Page */
 #ideas {
-    background-color: #002400; /* Primary dark green */
+    background-color: #6C757D; /* Primary dark green */
 }
 
 .ideas-display {
@@ -187,7 +187,7 @@ button:hover {
 }
 
 .idea {
-    background-color: #B3B6B7; /* Accent color */
+    background-color: white; /* Accent color */
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -212,7 +212,7 @@ button:hover {
 
 /* Projects Page */
 #projects {
-    background-color: #002400; /* Primary dark green */
+    background-color: #6C757D; /* Primary dark green */
 }
 
 .gallery {
@@ -237,7 +237,7 @@ button:hover {
 
 /* About Me Page */
 #about {
-    background-color: #002400; /* Primary dark green */
+    background-color: #6C757D; /* Primary dark green */
     padding: 100px 20px 60px;
     max-width: 800px;
     margin: auto;
@@ -257,7 +257,7 @@ p {
 /* The Modal (background) */
 .modal {
     width: 400px;
-    background: #f7f3e3;
+    background: white;
     position:absolute;
     top: 0;
     left: 50%;
@@ -276,14 +276,14 @@ p {
   
   /* Modal Content */
   .modal {
-    background-color: #f7f3e3; /* Accent color */
+    background-color: white; /* Accent color */
     margin: auto;
     padding: 20px;
-    border: 1px solid #af9164; /* Secondary color */
+    border: 1px solid #700000; /* Secondary color */
     width: 80%;
     max-width: 400px;
     text-align: center;
-    color: #002400; /* Primary dark green color */
+    color: #6C757D; /* Primary dark green color */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 9999;
   }
@@ -302,7 +302,7 @@ p {
   
   /* The Close Button */
   .close {
-    color: #af9164; /* Secondary color */
+    color: #700000; /* Secondary color */
     float: right;
     font-size: 24px;
     font-weight: bold;
@@ -312,7 +312,7 @@ p {
   
   .close:hover,
   .close:focus {
-    color: #002400; /* Primary dark green color */
+    color: #6C757D; /* Primary dark green color */
     text-decoration: none;
     cursor: pointer;
   }
